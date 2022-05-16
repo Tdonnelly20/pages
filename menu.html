@@ -9,34 +9,6 @@
 	<link href="" id="theme-style" rel="stylesheet" type="text/css" />
 	<script src="js/script.js"></script>
 	<script>
-		
-		$(document).ready(function() {
-			let x;
-			if(window.location.pathname === "/about-me.html"){
-				x=document.getElementById("aboutMe");
-			}else if(window.location.pathname === "/Experience.html"){
-				x=document.getElementById("experiences");
-			}else if(window.location.pathname === "/resume.html"){
-				x=document.getElementById("resume");
-			}else if(window.location.pathname === "/index.html"){
-				x=document.getElementById("projects");
-				/*	}else if(window.location.pathname === "/crime-map.html"){
-						var x=document.getElementById("crime-map");
-						x.style.display="block";
-					}else if(window.location.pathname === "/into-the-storm.html"){
-						var x=document.getElementById("into-the-storm");
-						x.style.display="block";
-					}else if(window.location.pathname === "/checkers.html"){
-						var x=document.getElementById("checkers");
-						x.style.display="block";
-					}else if(window.location.pathname === "/rpg.html"){
-						var x=document.getElementById("rpg");
-						x.style.display="block";*/
-			}else{
-				x=document.getElementById("projects");
-			}
-			x.style.backgroundColor='#164D56';
-		});
 		function menu() {
 			const x = document.getElementById("myTop-nav");
 			if (x.className === "top-nav") {
