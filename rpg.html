@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html  lang="" >
+<head>
+	<meta charset="us-ascii">
+	<title>Project Lilac</title>
+	<link rel="icon" href="/img/icons/browser-internet-icon.png"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://fonts.googleapis.com/css2?family=Russo+One&amp;display=swap" rel="stylesheet" />
+	<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&amp;family=Russo+One&amp;display=swap" rel="stylesheet" />
+	<link href="/css/style.css" rel="stylesheet" type="text/css" />
+	<link href="/css/project.css" rel="stylesheet" type="text/css" />
+	<link href="" id="theme-style" rel="stylesheet" type="text/css" />
+	<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+	<script src="https://code.jquery.com/ui/1.13.0/jquery-ui.js"></script>
+	<script src="https://www.w3schools.com/lib/w3.js"></script>
+	<style>
+		img {vertical-align: middle;
+			width: 100%; height:auto;}
+		
+		.slides{
+			width:75%;
+		}
+		hr{
+			border:1px solid var(--borderColor);
+		}
+		.slideshow{
+			overflow:hidden; margin:5%;height:auto;display:flex;justify-content:center;align-items:center;
+		}
+	</style>
+	<script src="/js/script.js"></script>
+</head>
+<body>
+<div id="icons-placeholder" ></div>
+<div class="windows">
+	<div id="email-placeholder" class="drag" ></div>
+	<div  id="draggable" class="drag">
+		<div class="page-container" style="border-width:0;padding-bottom:3%;">
+			<div id="menu-placeholder"></div>
+			<div>
+				<div style="margin:5%;">
+					<h4 style="text-align:center;">Project Lilac</h4>
+					<div class="project-row" >
+						<hr>
+						<div class="project-column">
+							<p><b>Role:</b> Senior Programmer<br><b>Tools:</b> Unity, C#, & JIRA<br><b>Duration: </b>September 2021 - Ongoing<br><b>Team Size: </b>15+</p>
+						</div>
+						<div class="project-column" >
+							<p><b>Genre:</b> RPG<br><b>Platform:</b> Windows, Mac, Linux<br><b>Project Status:</b> Development</p>
+						</div>
+					
+					</div>
+					<hr>
+					<div class="slideshow" >
+						<img class="slides" src="/img/rpg/Skellzauber1.png">
+						<img class="slides" src="/img/rpg/PortCity2.png">
+						<img class="slides" src="/img/rpg/DragonValley.png">
+						<img class="slides" src="/img/rpg/Skellzauber2.png">
+						<p><button class="prevA" onclick="myShow.previous()">&#10094;</button></p>
+						<p><button class="nextA" onclick="myShow.next()">&#10095;</button></p>
+						<script>
+							myShow=w3.slideshow(".slides", 0);
+						</script>
+					</div>
+					<hr>
+					<h6>Project Description</h6>
+					<p>&emsp;Since September 2021, I have been a Senior Programmer for a Unity-based combat role-playing game that I've been working on with a team of other WPI students. Our RPG will be a full-length, professional-feeling, narrative RPG with action and combat components, complete with professional art, puzzles, and an original soundtrack. We recently released a vertical slice at WPI's video game showcase, Alphafest, where it received positve reviews.<br><br>&emsp;I researched, designed, and implemented the RPG's <b>stat system</b> and <b>overworld system</b> with C#. Through this project, I am developing skills with Jira, Unity, working in large teams, leading others, and gaining practical experience with C# and game development. I'll release more information on my work with the RPG here as the game progresses.</p>
+					<hr>
+					<p style="text-align:center;margin:5%;"><a href="https://drive.google.com/file/d/1sY_mcXzBAQ_w7Zogy3iRssY4bIiCp0gm/view?usp=sharing" style="color:white;"><u>Download the vertical slice</u>.</a></p>
+					<hr>
+				</div>
+			</div>
+			<div >
+				<h6 style="text-align:center;">Website made by Tate Donnelly</h6>
+			</div>
+		</div>
+	</div>
+</div>
+</body>
+</html>

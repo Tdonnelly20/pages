@@ -1,0 +1,156 @@
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~General~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+:root{
+    --mainColor:#15202B;
+    --secondaryColor:#192734;
+
+    --borderColor:#164D56;
+
+    --mainText:#fff;
+    --secondaryText:#eeeeee;
+
+
+    --previewBg:rgb(25, 39, 52, 0.8);
+    --previewShadow: #111922;
+
+
+    --buttonColor:#164D56;
+
+
+}
+html, body{
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+
+body *{
+    transition: 0.3s;
+}
+
+
+h1, h2, h3, h4, h5, h6, strong{
+    color: var(--mainText);
+    font-family: 'Russo One', sans-serif;
+    font-weight: 500;
+}
+
+p, li, span, input, textarea{
+    color: var(--secondaryText);
+    font-family: 'Roboto Mono', monospace;
+}
+
+a{
+    text-decoration: none;
+    color:#17a2b8;
+}
+.page {
+    color:white;
+    padding-top:50px;
+    padding-right: 50px;
+}
+ul {
+    list-style: none;
+}
+ul li{
+    padding-bottom: .75rem;
+}
+
+h1 { font-size: 56px;}
+h2 { font-size: 36px;}
+h3 { font-size: 28px;}
+h4 { font-size: 24px;}
+h5 { font-size: 20px;}
+h6 { font-size: 16px;}
+
+body{
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-attachment: fixed;
+    background-size: 100% 100%; /* Resize the background image to cover the entire container */
+    height: 100%; /* You must set a specified height */
+    min-height:100vh;
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~Applications~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+#internet-icon{
+    float:left;
+    top:0;
+    margin-top:2.5%;
+    margin-right:2%;
+    position:absolute;
+
+}
+.internet-icon{
+    float:left;
+    top:0;
+    position:absolute;
+    border-color:transparent;
+
+}
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~Slideshows~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+.prevA, .nextA{
+    cursor: pointer;
+    position: absolute;
+    height:auto;
+    color: white;
+    background-color:var(--borderColor);
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+
+}
+
+.nextA{
+    position: absolute;
+    right: 5%;
+    border-radius: 3px 0 0 3px;
+}
+.prevA{
+    position: absolute;
+    left: 5%;
+    border-radius: 3px 0 0 3px;
+}
+.prevA:hover, .nextA:hover {
+    background-color: var(--previewShadow);
+}
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~Dragging Feature~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+#draggable {
+    width: 90%;
+    background-color:var(--secondaryColor);
+    margin-top:5%;
+    margin-bottom:5%;
+    z-Index:5;
+    border:2px solid var(--borderColor);
+}
+.drag{
+    background-color:inherit;
+    z-Index:5;
+}
+@media screen and (max-width: 1040px) {
+    #draggable, .draggable{
+        width:100%;
+        height:auto;
+        margin:0;
+        padding:0;
+        left:0;
+    }
+}
+.windows{
+    width:100%; height:100%; min-height:800px;display: flex; justify-content: center
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~resume~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+.resume{
+    margin-bottom:5%;
+}
+.resume-display{
+    margin:5%;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}

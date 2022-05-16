@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html >
+<head>
+	<meta charset="us-ascii">
+	<title>Experience</title>
+	<link rel="icon" href="/img/icons/browser-internet-icon.png"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://fonts.googleapis.com/css2?family=Russo+One&amp;display=swap" rel="stylesheet" />
+	<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&amp;family=Russo+One&amp;display=swap" rel="stylesheet" />
+	<link href="/css/style.css" rel="stylesheet" type="text/css" />
+	<link href="" id="theme-style" rel="stylesheet" type="text/css" />
+	<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+	<script src="https://code.jquery.com/ui/1.13.0/jquery-ui.js"></script>
+	<script src="https://www.w3schools.com/lib/w3.js"></script>
+	<script src="/js/script.js"></script>
+	<style>
+		
+		.column {
+			float: left;
+			width: 50%;
+			padding: 10px;
+			margin-top:30px;
+			height:min-content;
+			
+		}
+		.row{
+			margin:30px;
+			margin-top:5%;
+			height:max-content;
+			display:flex;
+			align-items:center;
+		}
+		/* Clear floats after the columns */
+		.row:after {
+			content: "";
+			display: table;
+			clear: both;
+			margin-top:30px;
+		}
+		
+		
+		@media screen and (max-width: 600px) {
+			.column {
+				width: 100%;
+				height:100%;
+				overflow:auto;
+			}
+			
+		}
+		
+		/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+		@media screen and (max-width: 1250px) {
+			.column {
+				width: 100%;
+				height:100%;
+				overflow:auto;
+				text-align:center;
+			}
+			.row{
+				overflow:auto;
+				display:block;
+			}
+			
+		}
+		hr{
+			border:1px solid var(--borderColor);
+		}
+		img{
+			width: 100%; overflow:hidden;
+		}
+		p, h5, h6{
+			margin-top:0;
+		}
+		h4{
+			margin-top:0;
+		}
+		li{margin-bottom: 2.5%}
+		
+		.experience{
+			margin:5%;
+			
+		}
+		.experience-box{
+			background-color:var(--previewShadow);
+			padding:5%;
+		}
+		ul{padding: 0;}
+	</style>
+</head>
+<body>
+<div id="icons-placeholder" ></div>
+<div class="windows">
+	<div id="email-placeholder" class="drag" ></div>
+	<div  id="draggable" class="drag">
+		<div class="page-container" style="border-width:0;padding-bottom:5%;">
+			<div id="menu-placeholder"></div>
+			<div style="margin:5%;text-align:center;">
+				<h4>Experience and Extracurricular Activities</h4>
+				
+				<div class="experience">
+					<a href="https://github.com/Tdonnelly20/Hospital-Application/tree/master"><h5><u>Brigham & Women's Hospital - Lead Software Engineer (Spring 2022)</u></h5></a>
+					<ul>
+						<li>Led ten programmers and managed project tasks using the Scrum methodology to develop new features for Brigham &amp; Women's Hospital application.</li>
+						<li>Designed and implemented an interactive graphical map system according to the observer and model-view-controller design patterns with Java and JavaFX, which allowed hospital employees to see and filter out locations, service requests, and medical equipment.</li>
+						<li>Created professional mockups, user stories, scenarios, storyboards, and UML diagrams to document the application's design and goals.</li>
+					</ul>
+				
+				</div>
+				<hr>
+				
+				<div class="experience">
+					<h5>Athlete Pass - Information Technology Coordinator (Fall 2021, Winter 2022)</h5>
+					<ul>
+						<li>Proposed, improved, and developed the website&#39;s functionality remotely to ensure that the athletes could cultivate audiences as easily as possible.</li>
+						
+						<li>Recommended and implemented security improvements for the website.</li>
+						
+						<li>Connected athletes&#39; content to their profiles, guaranteeing the best possible experience for patrons.</li>
+					</ul>
+				
+				</div>
+				<hr>
+				
+				<div class="experience">
+					<h5>Noble and Greenough School - ISS Intern (Summers 2017 - 2019)</h5>
+					<ul>
+						<li>Established strong relationships with the faculty and staff to easily diagnose and troubleshoot technological problems.</li>
+						<li>Prepared projectors, computers, phones, and iPads, supplying students with the best learning environment possible.</li>
+						<li>Collaborated with four other interns to solve technological problems.</li>
+					</ul>
+				</div>
+				<hr>
+				<div class="row" style="margin-top:0;">
+					<div class="column" style="margin-top:0;">
+						<div class="experience-box" style="margin-top:0; background-color: var(--previewShadow);">
+							<h5>Programming Languages<br></h5>
+							<ul >
+								<li>C/C++/C#</li>
+								<li>Java</li>
+								<li>JavaScript</li>
+								<li>HTML/CSS</li>
+								<li>Python</li>
+								<li>Ren&#39;Py</li>
+							</ul>
+						</div>
+					</div>
+					
+					<div class="column" style="margin-top:0; background-color: var(--previewShadow);">
+						<div class="experience-box" style="margin-top:0;">
+							<h5>Leadership<br></h5>
+							<ul>
+								<li>Senior Programmer, Project Lilac</li>
+								<li>Treasurer, Diversity in Games, WPI</li>
+								<li>Ambassador, Student Philanthropy Ambassadors, WPI</li>
+								<li>President, Computer Science Club, Noble and Greenough School</li>
+								<li>Head Editor, Yearbook, Noble and Greenough School</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<hr>
+			</div>
+		</div>
+		<div >
+			<h6 style="text-align:center;">Website made by Tate Donnelly</h6>
+		</div>
+	</div>
+</div>
+</body>
+</html>

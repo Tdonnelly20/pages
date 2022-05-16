@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="">
+<head><meta charset="us-ascii">
+	<title>Contact</title>
+	<link rel="icon" href="/img/icons/browser-internet-icon.png"/>
+	<meta name="wb:op" content="62292c4f163557d362192ddaf6fb06c7"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<link href="https://fonts.googleapis.com/css2?family=Russo+One&amp;display=swap" rel="stylesheet" />
+	<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&amp;family=Russo+One&amp;display=swap" rel="stylesheet" />
+	<link href="/css/style.css" rel="stylesheet" type="text/css" />
+	<link href="" id="theme-style" rel="stylesheet" type="text/css" />
+	<style>
+		
+		#email{
+			border-radius: 5px;
+			padding:20px;
+			min-width:500px;
+			min-height:575px;
+			background-color: #f2f2f2;
+			display:none;
+			position:absolute;
+			z-Index:5;
+		}
+		.drag{
+			
+			z-Index:5;
+		}
+		/* Style inputs with type="text", select elements and textareas */
+		input[type=text], select, textarea {
+			width: 100%; /* Full width */
+			padding: 12px; /* Some padding */
+			border: 1px solid #ccc; /* Gray border */
+			border-radius: 4px; /* Rounded borders */
+			box-sizing: border-box; /* Make sure that padding and width stays in place */
+			margin-top: 6px; /* Add a top margin */
+			margin-bottom: 16px; /* Bottom margin */
+			resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
+			color:black;
+		}
+		
+		/* Style the submit button with a specific background color etc */
+		input[type=submit] {
+			background-color: #04AA6D;
+			color: black;
+			padding: 12px 20px;
+			border: none;
+			border-radius: 4px;
+			cursor: pointer;
+		}
+		
+		/* When moving the mouse over the submit button, add a darker green color */
+		input[type=submit]:hover {
+			background-color: #45a049;
+		}
+	
+	</style>
+	<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+	<script src="https://code.jquery.com/ui/1.13.0/jquery-ui.js"></script>
+	<script src="https://www.w3schools.com/lib/w3.js"></script>
+	<script src="/js/script.js"></script>
+</head>
+<body>
+<div  id="email"  class="drag" >
+	<div class="email-nav-wrapper" style="z-Index:5;">
+		<button  onclick="email()" >X</button>
+		<h3 style="text-align:center; color:black;">Email</h3>
+	</div>
+	<form action="mail.php" method="post">
+		<div class="elem-group">
+			<label for="name">Your Name</label>
+			<input type="text" name="visitor_name" placeholder="John Doe" pattern=[A-Z\sa-z]{3,20} required style="color: black;">
+		</div>
+		<div class="elem-group">
+			<label for="email">Your E-mail</label>
+			<input type="email" name="visitor_email" placeholder="john.doe@email.com" required style="color: black;">
+		</div>
+		<div class="elem-group">
+			<label for="affiliation">Affiliation</label>
+			<input type="text" id="affiliation" name="affiliation" placeholder="Company or N/A" required style="color: black;">
+		</div>
+		<div class="elem-group">
+			<label for="title">Reason For Contacting</label>
+			<input type="text" id="title" name="email_title" placeholder="Freelance work, Bug, Meaning of Life, etc" pattern=[A-Za-z0-9\s]{8,60} style="color: black;">
+		</div>
+		<div class="elem-group">
+			<label for="message">Write your message</label>
+			<textarea id="message" name="visitor_message" placeholder="Say whatever you want." required style="color: black;"></textarea>
+		</div>
+		<button type="submit">Send Message</button>
+	</form>
+
+</div>
+</body>
+</html>	
+            	

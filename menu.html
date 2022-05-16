@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/css2?family=Russo+One&amp;display=swap" rel="stylesheet" />
+	<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&amp;family=Russo+One&amp;display=swap" rel="stylesheet" />
+	<link href="/css/menu.css" rel="stylesheet" type="text/css" />
+	<link href="" id="theme-style" rel="stylesheet" type="text/css" />
+	<script src="js/script.js"></script>
+	<script>
+		
+		$(document).ready(function() {
+			let x;
+			if(window.location.pathname === "about-me.html"){
+				x=document.getElementById("aboutMe");
+			}else if(window.location.pathname === "Experience.html"){
+				x=document.getElementById("experiences");
+			}else if(window.location.pathname === "/resume.html"){
+				x=document.getElementById("resume");
+			}else if(window.location.pathname === "/index.html"){
+				x=document.getElementById("projects");
+				/*	}else if(window.location.pathname === "/crime-map.html"){
+						var x=document.getElementById("crime-map");
+						x.style.display="block";
+					}else if(window.location.pathname === "/into-the-storm.html"){
+						var x=document.getElementById("into-the-storm");
+						x.style.display="block";
+					}else if(window.location.pathname === "/checkers.html"){
+						var x=document.getElementById("checkers");
+						x.style.display="block";
+					}else if(window.location.pathname === "/rpg.html"){
+						var x=document.getElementById("rpg");
+						x.style.display="block";*/
+			}else{
+				x=document.getElementById("projects");
+			}
+			x.style.backgroundColor='#164D56';
+		});
+		function menu() {
+			const x = document.getElementById("myTop-nav");
+			if (x.className === "top-nav") {
+				x.className += " responsive";
+			} else {
+				x.className = "top-nav";
+			}
+		}
+	</script>
+	<title></title>
+</head>
+<body>
+<div>
+	<div id="nav-wrapper" class="nav-wrapper" >
+		<div class="dots-wrapper" >
+			
+			<button class="browser-dot" onclick="quitAndLoadFunction()" id="dot-1"></button>
+			
+			<button class="browser-dot" onclick="quitAndLoadFunction()" id="dot-2"></button>
+			
+			<button class="browser-dot" onclick="increaseSize()" id="dot-3"></button>
+			
+			<p class="name" > Tate Donnelly: Developer</p>
+		</div>
+		
+		
+		<div class="top-nav" id="myTop-nav" style="overflow:hidden;">
+			<a href="javascript:void(0);" style="font-size:15px;background-color:transparent;" class="icon" onclick="menu()">&#9776;</a>
+			<a href="https://github.com/Tdonnelly20" target="_self"  id="gitHub" >GitHub</a>
+			<a href="about-me.html" target="_self"  id="aboutMe" >About Me</a>
+			<a href="index.html"  target="_self" id="projects" >Projects</a>
+			<a href="rpg.html" target="_self" id="rpg" >Project Lilac</a>
+			<a href="into-the-storm.html" target="_self" id="into-the-storm" >Into The Storm</a>
+			<a href="crime-map.html" target="_self" id="crime-map" >Boston's Crime Map</a>
+			<a href="Experience.html" target="_self" id="experiences">Experience</a>
+			<a href="resume.html" target="_self" id="resume">Resume</a>
+		</div>
+	
+	</div>
+</div>
+</body>
+</html>
