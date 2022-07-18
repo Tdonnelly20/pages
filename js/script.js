@@ -22,22 +22,22 @@ function increaseSize() {
     if($(window).width() > 1040){
         var draggable = document.getElementById("draggable");
         var menu = document.getElementById("nav-wrapper");
-        if(draggable.style.width !=='90%'){
-            draggable.style.width ='90%';
-            draggable.style.height='fit-content';
-            draggable.style.marginTop='5%';
-            draggable.style.marginBottom='5%';
-            draggable.style.float="center";
+        if(draggable.style.width !=='100%'){
+             draggable.style.width ='100%';
+             draggable.style.height='100%';
+             draggable.style.marginTop='0%';
+             draggable.style.marginBottom='0%';
+             menu.style.width='100%';
+             draggable.style.left='0';
+             draggable.style.top='0';
+             draggable.style.right='0';
+             draggable.style.float="center";
         }else{
-            draggable.style.width ='100%';
-            draggable.style.height='100%';
-            draggable.style.marginTop='0%';
-            draggable.style.marginBottom='0%';
-            menu.style.width='100%';
-            draggable.style.left='0';
-            draggable.style.top='0';
-            draggable.style.right='0';
-            draggable.style.float="center";
+             draggable.style.width ='90%';
+             draggable.style.height='fit-content';
+             draggable.style.marginTop='5%';
+             draggable.style.marginBottom='5%';
+             draggable.style.float="center";
         }
     }
 }
