@@ -26,16 +26,29 @@
 			margin: 5% 30px 30px;
 			height: max-content;
 			display: flex;
-			align-items: center;
+			/*align-items: center;*/
 		}
-		.row:after {
+		
+		.appcolumn {
+			float: left;
+			width: 100%;
+			height: 100%;
+		}
+		
+		.approw {
+			height: max-content;
+			display: flex;
+			align-items: flex-start;
+		}
+		
+		.row:after, .approw:after{
 			content: "";
 			display: table;
 			clear: both;
 			margin-top: 30px;
 		}
 		@media screen and (max-width: 600px) {
-			.column {
+			.column, .appcolumn{
 				width: 100%;
 				height: 100%;
 				overflow: auto;
@@ -56,14 +69,32 @@
 			}
 		}
 		
+		@media screen and (max-width: 767px) {
+			.appcolumn {
+				width: 100%;
+				height: 100%;
+				overflow: auto;
+				text-align: center;
+				padding: 10%;
+			}
+			.approw {
+				overflow: auto;
+				display: block;
+			}
+		}
+		
+		
 		img {
-			width: 100%;
 			overflow: hidden;
 		}
 		
 		p, h4, h5, h6 {
 			margin-bottom: 5%;
 			margin-top: 0;
+			font-size: 100%;
+		}
+		h4{
+			font-size: 26px;
 		}
 		
 		.iframe-con {
@@ -95,24 +126,46 @@
 				<div id="menu-placeholder"></div>
 				<div>
 					<div style="margin:5%;">
-						<h4 style="text-align:center;">Projects</h4>
+						<h2 style="text-align:center;">Projects</h2>
 						<div class="row">
 							
 							<div class="column">
-								<img src="/img/HellFireHair.jpg" alt=""/>
+								<a href="https://play.google.com/apps/internaltest/4701100634393500121"><h3><u>Hellfire Hair</u></h3></a>
+								<a href="https://play.google.com/apps/internaltest/4701100634393500121"><img src="/img/HellFireHair2.jpg" alt="" style="width: 100%"/></a>
 							</div>
 							<div class="column">
-								<a href="#"><h4><u>Hellfire Hair</u></h4></a>
-								<h6>Role: Programmer & Build Master<br>Expected Release: August 2022<br>Tools: C# & Unity</h6>
+								<h3>Summary</h3>
+								<h6><b>Publisher:</b> MassDiGI Studio<br>Role: Programmer & Build Master<br>Expected Release: August 2022<br>Tools: C# & Unity</h6>
 								<p>
-									Hellfire Hair is a roguelike card battler similar to Slay the Spire where you play as a hairdresser from hell who battles the hair of the devil's repressed servants to give them makeovers.<br>
-									Contributions: Programming and builds</p><!--<br>Art by Ryan Normand, Athena Chang, & Yaseen Nagib. Design by Yaseen Nagib & Brendan Rufo. Programming by Tate Donnelly, Brendan Rufo, & Jakob Pine. Sound Design and Composing by Katie Rupinski.
+									Hellfire Hair is a roguelike card battler similar to Slay the Spire where you style the worst hair days of hell with the help of demons.</p><!--<br>Art by Ryan Normand, Athena Chang, & Yaseen Nagib. Design by Yaseen Nagib & Brendan Rufo. Programming by Tate Donnelly, Brendan Rufo, & Jakob Pine. Sound Design and Composing by Katie Rupinski.
 								<p>-->
-							</div>
+								<div>
+									<h4>Contributions</h4>
+									<p>Combat System, Progression System, Audio System, Animation System, Overworld System, and various UI elements.</p>
+								</div>
+								</div>
 						
 						</div>
-						<p style="text-align:center;"><a href="#" style="color:white;border: 3px solid var(--borderColor); text-align:center;padding:15px; ">Coming Soon</a></p>
-						<div class="row">
+						<div class="approw">
+							
+							<div class="appcolumn">
+								<p style="text-align:center;height:max-content; padding-top: 5%;">
+									<a href="https://play.google.com/apps/internaltest/4701100634393500121" style="color:white;border: 3px solid var(--borderColor); text-align:center;padding:15px; ">Coming Soon</a>
+								</p>
+							</div>
+							<div class="appcolumn">
+								<p style="text-align:center;height:max-content;">
+									<a href="https://play.google.com/apps/internaltest/4701100634393500121"><img class="alignnone wp-image-3927" src="/img/GooglePlay.png" alt="" width="150" height="44"></a>
+								</p>
+							</div>
+							<!--<div class="appcolumn" >
+								<p style="text-align:center;height:max-content;">
+									<a href="#"><img class="alignnone wp-image-3927" src="/img/AppStore.png" alt="" width="150" height="44"></a>
+								</p>
+							</div>-->
+						
+						</div>
+						<!--<div class="row">
 							
 							<div class="column">
 								<a href="/into-the-storm.html"><img src="/img/into%20the%20storm/cp-back.jpg" alt=""/></a>
@@ -128,45 +181,65 @@
 						
 						</div>
 						<p style="text-align:center;"><a href="/into-the-storm.html" style="color:white;border: 3px solid var(--borderColor); text-align:center;padding:15px; ">Read More</a></p>
-						
+						-->
 						<div class="row">
 							<div class="column">
-								<a href="/rpg.html"><img src="/img/into%20the%20storm/rpg2.jpg" alt=""/></a>
-							</div>
-							<div class="column">
-								<a href="/rpg.html"><h4><u>Project Lilac</u></h4></a>
-								<h6>Role: Senior Programmer<br>Tools: Unity, C#, & JIRA<br>September 2021-Present<br>Expected Release Date: December 2023<br>Platform: PC, Linux, and Mac</h6>
-								<p>A traditional narrative and turn-based RPG that follows multiple character perspectives.</p>
-								<p>Contributions: Stat System, Over world system, and Event System.</p>
-							</div>
-						
-						</div>
-						<p style="text-align:center;"><a href="/rpg.html" style="color:white;border: 3px solid var(--borderColor); text-align:center;padding:15px; ">Read More</a></p>
-						<div class="row">
-							<div class="column">
+								<a href="/double-crossed.html"><h3><u>Double Crossed</u></h3></a>
 								<div class="iframe-con">
 									<iframe class="responsive-iframe" src="https://www.youtube.com/embed/G6GnujtUMUg" title="Double Crossed" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 								</div>
 							</div>
 							<div class="column">
-								<a href="/double-crossed.html"><h4><u>Double Crossed</u></h4></a>
+								<h3>Summary</h3>
 								<h6>Role: Developer & Video Editor<br>Tools: C++, <a href="/ascii-game-engine.html"><u>ASCII Game Engine</u></a>, & DaVinci Resolve<br>Released: March 2022<br>Platform: Windows</h6>
 								<p>A stealth-based action game where you play as a secret agent trying to sneak into secure locations, gather intel, and avoid being caught.</p>
-								<p>Contributions: Level system, Combat system, and Health system.</p>
+								<div><h4>Contributions</h4>
+									<p>Level system, Combat system, and Health system.</p></div>
 							</div>
 						</div>
-						<p style="text-align:center;"><a href="/double-crossed.html" style="color:white;border: 3px solid var(--borderColor); text-align:center;padding:15px; ">Read More</a></p>
+						<div class="approw">
+							<div class="appcolumn" >
+								<p style="text-align:center;margin-top: 5%;"><a href="/double-crossed.html" style="color:white;border: 3px solid var(--borderColor); text-align:center;padding:15px; ">Read More</a></p>
+							</div>
+						</div>
 						<div class="row">
 							<div class="column">
-								<a href="/ascii-game-engine.html"><img src="/img/ASCII-Engine.jpg" alt=""/></a>
+								<a href="/rpg.html"><h3><u>Project Lilac</u></h3></a>
+								<a href="/rpg.html"><img src="/img/rpg.png" alt="" style="width: 100%"/></a>
 							</div>
 							<div class="column">
-								<a href="/ascii-game-engine.html"><h4><u>ASCII Game Engine</u></h4></a>
+								<h3>Summary</h3>
+								<h6>Role: Senior Programmer<br>Tools: Unity, C#, & JIRA<br>September 2021-Present<br>Expected Release Date: December 2023<br>Platform: PC, Linux, and Mac</h6>
+								<p>A traditional narrative and turn-based RPG that follows multiple character perspectives.</p>
+								<div>
+									<h4>Contributions</h4>
+									<p>Stat System, Overworld System, Scene System, and Event System.</p>
+								</div>
+								
+							</div>
+						
+						</div>
+						<div class="approw">
+							<div class="appcolumn" >
+								<p style="text-align:center;margin-top: 5%;"><a href="/rpg.html" style="color:white;border: 3px solid var(--borderColor); text-align:center;padding:15px; ">Read More</a></p>
+							</div>
+						</div>
+						<div class="row">
+							<div class="column">
+								<a href="/ascii-game-engine.html"><h3><u>ASCII Game Engine</u></h3></a>
+								<a href="/ascii-game-engine.html"><img src="/img/ASCII-Engine.jpg" alt="" style="width: 100%"/></a>
+							</div>
+							<div class="column">
+								<h3>Summary</h3>
 								<h6>Role: Sole Developer<br>Tools: C++<br>Released: February 2022<br>Platform: Windows</h6>
 								<p>A text-based, 2D game engine built from scratch and based off of Mark Claypool's game engine, Dragonfly. This project taught me about game engine architecture, and the intricacies of how game engines function.</p>
 							</div>
 						</div>
-						<p style="text-align:center;"><a href="/ascii-game-engine.html" style="color:white;border: 3px solid var(--borderColor); text-align:center;padding:15px; ">Read More</a></p>
+						<div class="approw" >
+							<div class="appcolumn" >
+								<p style="text-align:center;margin-top: 5%;"><a href="/ascii-game-engine.html" style="color:white;border: 3px solid var(--borderColor); text-align:center;padding:15px; ">Read More</a></p>
+							</div>
+						</div>
 						<!--
 						<div class="row">
 							<div class="column">
@@ -182,7 +255,7 @@
 					</div>
 				</div>
 				<div>
-					<h6 style="text-align:center;margin-top:40px;">Website made by Tate Donnelly</h6>
+					<h5 style="text-align:center;margin-top:40px;">Website made by Tate Donnelly</h5>
 				</div>
 			</div>
 		</div>
